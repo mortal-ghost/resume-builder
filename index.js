@@ -13,7 +13,13 @@ app.get("/resume", (req, res) => {
     res.render("landing");
 });
 
-app.get("/login");
+app.get("/resume/new", (req, res) => {
+  res.render("new");
+});
+
+app.get("/resume_build", (req, res) => {
+  res.render("resume/srt-resume");
+})
 
 app.listen(3000 || process.env.PORT, process.env.IP, () => {
   console.log(`Server is running`);

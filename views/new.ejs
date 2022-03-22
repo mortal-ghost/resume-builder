@@ -1,0 +1,106 @@
+<%- include('partials/header.ejs') %>
+
+<section>
+  <form class="p-4" method="get" action="/resume_build">
+    <h2 class="text-4xl font-bold mb-4">Personal Information</h2>
+    <!-- Personal Information -->
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="grid-name"
+        >
+          Name
+        </label>
+        <input
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-name"
+          type="text"
+          placeholder="Jane"
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="grid-email"
+        >
+          Email
+        </label>
+        <input
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-email"
+          type="email"
+          placeholder="jane-doe@email.com"
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="grid-phone"
+        >
+          Phone
+        </label>
+        <input
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-phone"
+          type="text"
+          placeholder="(123) 456-7890"
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="grid-phone"
+        >
+          LinkedIn
+        </label>
+        <input
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-linkedIn"
+          type="text"
+          placeholder="www.linkedin.com/us/jane-doe"
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-1">
+        <label
+          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+          for="grid-title"
+        >
+          Job Title
+        </label>
+        <input
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-title"
+          type="text"
+          placeholder="Web Developer"
+        />
+      </div>
+    </div>
+    <!-- End Personal Information -->
+
+    <!-- Education -->
+    <h2 class="text-4xl font-bold mb-4">Education</h2>
+
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label
+        class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        for="grid-school"
+      >
+        School/University
+      </label>
+      <input
+        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        id="grid-school"
+        type="text"
+        placeholder="(123) 456-7890"
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="bg-blue-700 focus:bg-blue-500 py-2 px-6 rounded-lg text-white"
+    >
+      Submit
+    </button>
+  </form>
+</section>
