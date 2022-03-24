@@ -16,7 +16,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-name"
           type="text"
-          name="info.name"
+          name="name"
           placeholder="Jane"
         />
       </div>
@@ -31,7 +31,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-email"
           type="email"
-          name="info.email"
+          name="email"
           placeholder="jane-doe@email.com"
         />
       </div>
@@ -46,7 +46,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-phone"
           type="text"
-          name="info.phone"
+          name="phone"
           placeholder="(123) 456-7890"
         />
       </div>
@@ -61,7 +61,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-linkedIn"
           type="text"
-          name="info.linkedIn"
+          name="linkedIn"
           placeholder="www.linkedin.com/us/jane-doe"
         />
       </div>
@@ -76,7 +76,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-title"
           type="text"
-          name="info.title"
+          name="job_title"
           placeholder="Web Developer"
         />
       </div>
@@ -97,7 +97,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-school"
           type="text"
-          name="education.school"
+          name="education[school]"
           placeholder="IIT, Guwahati"
         />
       </div>
@@ -113,7 +113,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-school-program"
           type="text"
-          name="education.program"
+          name="education[program]"
           placeholder="B. Tech."
         />
       </div>
@@ -129,7 +129,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-school-major"
           type="text"
-          name="education.major"
+          name="education[major]"
           placeholder="Computer Science"
         />
       </div>
@@ -145,7 +145,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-school-score"
           type="text"
-          name="education.score"
+          name="education[score]"
           placeholder="9.0 cpi"
         />
       </div>
@@ -168,7 +168,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-company-<%= i %>"
           type="text"
-          name="experience[<%= i %>].company"
+          name="experience[<%= i %>][company]"
           placeholder="Google"
         />
       </div>
@@ -184,7 +184,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-job-<%= i %>"
           type="text"
-          name="experience[<%= i %>].job"
+          name="experience[<%= i %>][job]"
           placeholder="Web Developer"
         />
       </div>
@@ -200,7 +200,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-job-start-<%= i %>"
           type="text"
-          name="experience[<%= i %>].start"
+          name="experience[<%= i %>][start]"
           placeholder="01/01/2020"
         />
       </div>
@@ -215,7 +215,7 @@
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-job-end-<%= i %>"
           type="text"
-          name="experience[<%= i %>].end"
+          name="experience[<%= i %>][end]"
           placeholder="01/01/2020"
         />
       </div>
@@ -320,14 +320,14 @@
       <% } %>
     </div>
 
-    <h2 class="text-4xl font-bold mb-4">Personal Skills</h2>
+    <h2 class="text-4xl font-bold mb-4">Profile Summary</h2>
 
     <div class="flex flex-wrap -mx-3 mb-6 px-3">
       <textarea
         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         id="grid-job-description<%= i %>"
         type="text"
-        name="personal_skills"
+        name="summary"
         placeholder="Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       ></textarea>
     </div>
@@ -340,3 +340,5 @@
     </button>
   </form>
 </section>
+
+<%- include('partials/footer.ejs') %>
