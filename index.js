@@ -27,6 +27,29 @@ app.post("/resume", (req, res) => {
   const profile = processProfile(req.body);
   res.render("resume/srt-resume", {profile: profile});
 
+  app.render("resume/srt-resume", {profile: profile}, (err, html) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const options = {
+        format: "Letter",
+        border: {
+          top: "1in",
+          right: "1in",
+          bottom: "1in",
+          left: "1in"
+        }
+      };
+      htmlToPdf.create(html, options).toFile("./public/resume/resume.pdf", (err, res) => {
+        if (err) {
+          console.log(err);
+        }
+      });
+    }
+  });
+
+  res.sendFile(path.join(__dirname, "public/srt-resume.pdf"));
+
 });
 
 app.listen(3000 || process.env.PORT, process.env.IP, () => {
