@@ -13,7 +13,7 @@ function profileProcess(profile) {
         experience: experience,
         skills: skills,
         projects: projects,
-        personalSkills: profile.summary
+        summary: profile.summary
     };
 
     return data;
